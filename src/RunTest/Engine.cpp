@@ -8,6 +8,7 @@ void Engine::init()
     window.create(VideoMode(640, 480), "Test!");
 } 
 
+/* 
 bool Engine::isRunning()
 {
     return window.isOpen();
@@ -23,7 +24,6 @@ void Engine::handleEvents()
         {
             case Event::Closed:
                 window.close();
-                //break;
         }
     }
 }
@@ -33,3 +33,4 @@ void Engine::render()
     window.clear(Color::White);
     window.display();
 }
+*/

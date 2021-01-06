@@ -12,13 +12,19 @@ void drawScreen()
         sf::Event event;
 
         while (window.pollEvent(event))
-        {   /*
-            if (event.type == sf::Event::Closed)
+        {   
+            if (event.type == sf::Event::Closed) 
+            {
                 window.close();
-            */
+            }
 
-           switch (event.type)
-           {
+            if (event.type == sf::Event::MouseButtonPressed)
+            {
+                std::cout << "Hello World" << std::endl;
+            }
+            /*   
+            switch (event.type)
+            {
                 // window closed
                 case sf::Event::Closed:
                     window.close();
@@ -26,21 +32,24 @@ void drawScreen()
 
                 // key pressed
                 case sf::Event::MouseButtonPressed:
-                    std::cout << "Hello World" << std::endl;
+                    std::cout << "IN!" << std::endl;
                     break;
+                
                 // we don't process other types of events
                 default:
                     break;
             }
+            */
         }
         window.clear();
         window.draw(buttonShape);
         window.display();
     }
 }
-
+/*
 int main(void)
 {
     drawScreen();
     return 0;
 }
+*/
