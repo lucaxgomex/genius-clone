@@ -19,7 +19,7 @@ bool Engine::isRunning()
 }
 
 void Engine::handleEvents()
-{
+{ 
     Event event;
     while (window.pollEvent(event))
     {
@@ -45,6 +45,6 @@ void Engine::handleEvents()
 void Engine::render()
 {
     window.clear(Color::White);
-    gamestates.render(window);
+    gamestates.render(&window);
     window.display();
 }

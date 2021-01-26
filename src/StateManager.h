@@ -8,7 +8,7 @@ class StateManager
     private:
         std::stack<GameState*> states;
         Console console;
-
+     
     public:
         void addState(GameState* state);
         void loop();
